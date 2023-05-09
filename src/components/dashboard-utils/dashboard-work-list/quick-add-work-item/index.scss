@@ -1,0 +1,35 @@
+.quick-add-work-item {
+    position: relative;
+
+    .input-work-item {
+        font-size: var(--fs-lg);
+        border: none;
+        outline: none;
+        box-shadow: none;
+        padding: var(--spacing-xs) 0;
+        border-bottom: 1px solid var(--sub-antd);
+        border-radius: 0;
+        background: unset;
+
+        .ant-input-lg {
+            font-size: inherit;
+        }
+
+        .ant-input-suffix {
+            right: 0;
+        }
+    }
+
+    .quick-add-work-item-footer {
+        margin-top: var(--spacing-xs);
+        font-size: var(--fs-lg);
+        width: 100%;
+        display: flex;
+
+        .action {
+            margin-left: auto;
+            cursor: pointer;
+            color: var(--main-major);
+        }
+    }
+}

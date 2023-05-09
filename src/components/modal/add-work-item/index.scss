@@ -1,0 +1,64 @@
+.modal-add-work-item {
+    .form-add-work-item {
+        &.base-form {
+            padding: var(--spacing);
+        }
+
+        .assign-wrap {
+            .assign-item {
+                &:hover:after {
+                    position: absolute;
+                    content: attr(title);
+                    left: 0;
+                    bottom: 100%;
+                    padding: var(--spacing-xs) var(--spacing);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: var(--br);
+                    color: white;
+                }
+
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .ant-form-item-control-wrapper,
+        .ant-calendar-picker,
+        .ant-picker {
+            width: 100%;
+        }
+
+        .participants-select {
+            .ant-select-selector {
+                &>span {
+                    padding: var(--spacing-xxs) var(--spacing-sm);
+                    margin: 1px 0;
+                    border-radius: var(--br-xl);
+                    background: #eee;
+                    margin-left: var(--spacing-xxs);
+
+                    &.ant-select-selection-search,
+                    &.ant-select-selection-placeholder {
+                        background: unset;
+                        padding: unset;
+
+                        .ant-select-selection-search-input {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            .selected-tag-item {
+                display: flex;
+                align-items: center;
+
+                .remove-icon {
+                    margin-left: var(--spacing-xs);
+                    font-size: var(--fs-xs);
+                }
+
+            }
+        }
+    }
+}

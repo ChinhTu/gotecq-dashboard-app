@@ -1,0 +1,10 @@
+// WARNING: ALWAYS write down REASON for GLOBAL OVERRIDING
+
+// override activated icon color on side-nav
+.menu-list {
+    .menu-item.activated {
+        .anticon-inbox {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.menu-item.selected {
+
+    .icon-layers,
+    .icon-validator,
+    .icon-patient-centric {
+        svg>path {
+            stroke: white;
+        }
+    }
+}

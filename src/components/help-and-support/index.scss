@@ -1,0 +1,74 @@
+.dashboard-help {
+    height: 100%;
+
+    .dashboard-help-header {
+        border-radius: var(--br) var(--br) 0 0;
+        border: 1px solid var(--main-tertiary);
+        padding: var(--spacing-sm) var(--spacing-lg);
+
+        .dashboard-help-search {
+            min-width: 300px;
+        }
+    }
+
+    .dashboard-help-body {
+        flex: 1;
+        background-color: var(--main-tertiaryLighter);
+        border: 1px solid var(--main-tertiary);
+        border-radius: 0 0 var(--br) var(--br);
+        border-top: none !important;
+        padding: var(--spacing-lg);
+
+        .aspect-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: var(--spacing);
+
+            .aspect-wrapper {
+                background-color: var(--contrast-primary);
+                border-radius: var(--br-sm);
+                box-shadow: var(--bs-1);
+                padding: var(--spacing);
+
+                .aspect-name {
+                    font-size: var(--fs-xl);
+                    font-weight: bold;
+                    line-height: 1;
+                    margin-bottom: var(--spacing-sm);
+                }
+
+                .aspect-content {
+                    .aspect-group-list {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: var(--spacing);
+
+                        .aspect-group-item {
+                            .group-name {
+                                font-weight: bold;
+                                font-size: var(--fs-lg);
+                            }
+
+                            .group-dashboard-list {
+                                padding-left: var(--spacing);
+
+                                .group-dashboard-item {
+                                    .content-wrapper {
+                                        align-items: baseline;
+                                        width: 100%;
+
+                                        .ant-space-item:first-of-type {
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            overflow: hidden;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

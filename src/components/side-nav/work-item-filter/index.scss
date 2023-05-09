@@ -1,0 +1,37 @@
+.work-item-filter {
+    height: 100%;
+    --text-primary: var(--contrast-primary);
+    --text-normal: var(--main-tertiaryDarker);
+
+    .filter-header {
+        border-bottom: 1px solid var(--bdColor-blunt) !important;
+    }
+
+    .filter-item {
+        &>.filter-title>span.title {
+            color: var(--text-normal);
+        }
+
+        .ant-checkbox-wrapper {
+            color: var(--text-normal);
+        }
+
+        &>.filter-edit.multiple-select-panel {
+            border-color: var(--text-normal);
+        }
+    }
+
+    .saved-filter-title {
+        &>.filter-title {
+            color: var(--text-primary);
+        }
+
+        &>.filter-subtitle {
+            color: var(--text-normal);
+        }
+    }
+
+    .filter-input-reset-button {
+        color: var(--text-normal);
+    }
+}

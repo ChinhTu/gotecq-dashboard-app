@@ -1,0 +1,51 @@
+// .dashboard-backtop-btn {
+//     width: unset;
+//     height: unset;
+
+//     &.ant-back-top {
+//         position: absolute;
+//         top: 4rem;
+//         right: var(--spacing-sm);
+
+//         .ant-fade {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//         }
+//     }
+
+//     .dashboard-backtop-content {
+//         background-color: #FAFF0030;
+//         border: 2px solid var(--sub-black);
+//         border-radius: var(--br-lg);
+//         width: 1.6rem;
+//         height: 3rem;
+//         justify-content: space-evenly;
+
+//         .backtop-icon {
+//             font-size: 0.6rem;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//         }
+//     }
+// }
+
+.position-indicator {
+    display: inline;
+    position: absolute;
+    right: var(--spacing);
+    z-index: 1000;
+
+    &.hidden {
+        display: none;
+    }
+
+    &.top-indicator {
+        top: var(--spacing-xs);
+    }
+
+    &.bottom-indicator {
+        bottom: var(--spacing-xs);
+    }
+}

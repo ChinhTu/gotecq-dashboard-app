@@ -1,0 +1,45 @@
+.detail-dashboard-content {
+    &.detail-dashboard-content-no-data {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.detail-dashboard-content__complicated-conditions-member,
+    &.detail-dashboard-content__high-cost-members,
+    &.detail-dashboard-content__potential-high-cost-member,
+    &.detail-dashboard-content__chronic-renal-failure-members,
+    &.detail-dashboard-content__home-health-and-emergency-room-visits,
+    &.detail-dashboard-content__members-without-office-visit,
+    &.detail-dashboard-content__member-distribution-map {
+        height: 100%;
+        .dashboard-wrapper {
+            padding: 0;
+        }
+        .dashboard-cell {
+            border-radius: 0;
+        }
+        .dashboard-row,
+        .dashboard-wrapper {
+            border-radius: 0;
+            height: 100%;
+        }
+        .member-dashboard-table {
+            border-radius: 0;
+            border: none;
+        }
+    }
+    &.detail-dashboard-content__member-distribution-map {
+        .markercluster-map-viewer {
+            border: none;
+            .hanging-title {
+                display: none;
+            }
+        }
+    }
+}
+
+.dashboard-summary-header {
+    background-color: var(--main-tertiaryLighter);
+}

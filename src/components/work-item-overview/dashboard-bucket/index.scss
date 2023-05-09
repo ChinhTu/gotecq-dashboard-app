@@ -1,0 +1,18 @@
+.dashboard-bucket {
+    .dashboard-bucket-content {
+        background-color: white;
+        border-radius: var(--br);
+        border: none;
+        border: var(--bd);
+        box-shadow: none;
+        display: block;
+        flex-shrink: 0;
+        overflow: hidden;
+        padding: var(--spacing-sm) var(--spacing-lg);
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--spacing-sm);
+    }
+}

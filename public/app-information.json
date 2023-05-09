@@ -1,0 +1,23 @@
+{
+    "frontend.code": "pcd",
+    "frontend.buildtime": "2023-04-26T03:01:40.383Z",
+    "frontend.version": "0.5.59",
+    "frontend.vital": "0.0.0",
+    "frontend.library_list": [],
+    "backend.api_list": [
+        "backend.api.user-management-domain",
+        "backend.api.company-domain"
+    ],
+    "backend.api.user-management-domain": {
+        "name": "gotecq.user-management",
+        "domain": "user-management-domain",
+        "version": "1.1.1",
+        "timestamp": "2023-04-26 03:01:40.457566"
+    },
+    "backend.api.company-domain": {
+        "name": "gotecq.company",
+        "domain": "company-domain",
+        "version": "1.1.1",
+        "timestamp": "2023-04-26 03:01:40.456090"
+    }
+}

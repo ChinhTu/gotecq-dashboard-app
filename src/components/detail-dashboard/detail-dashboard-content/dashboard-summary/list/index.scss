@@ -1,0 +1,23 @@
+.dashboard-summary-aspect {
+    padding: 0 var(--spacing-lg);
+    background-color: var(--main-tertiaryLighter);
+
+    .dashboard-summary-aspect-group {
+        margin-bottom: var(--spacing);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .group-name {
+            margin-bottom: var(--spacing-sm);
+            line-height: 1;
+        }
+
+        .dashboard-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing);
+        }
+    }
+}

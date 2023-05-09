@@ -1,0 +1,23 @@
+.favorite-dashboard-aspect {
+    padding: var(--spacing-lg);
+    background-color: var(--main-tertiaryLighter);
+
+    .favorite-dashboard-aspect-group {
+        margin-bottom: var(--spacing);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .group-name {
+            margin-bottom: var(--spacing-sm);
+            line-height: 1;
+        }
+
+        .dashboard-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing);
+        }
+    }
+}

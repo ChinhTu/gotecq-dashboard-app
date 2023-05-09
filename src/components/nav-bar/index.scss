@@ -1,0 +1,37 @@
+.app-navbar {
+    &.navbar-hidden {
+        display: none;
+    }
+
+    .app-navbar__action-menu__dropdown-btn {
+        font-size: var(--fs-2xl);
+        padding: 0 calc(calc(var(--navbar-height) - var(--fs-2xl)) / 2); // make sure the dropdown btn is a square
+        height: 100%;
+
+        // vertical align middle for the icon
+        display: flex;
+        align-items: center;
+
+        &.ant-dropdown-open {
+            background-color: var(--main-secondary);
+            color: white;
+        }
+    }
+}
+
+.app-navbar__action-menu {
+    border-radius: var(--br);
+
+    .ant-dropdown-menu-title-content {
+        color: var(--color-normal);
+        font-size: var(--fs-md);
+        display: flex;
+        align-items: center;
+        column-gap: var(--spacing-sm);
+
+        .anticon {
+            color: var(--color-faint);
+            font-size: var(--fs-xl);
+        }
+    }
+}

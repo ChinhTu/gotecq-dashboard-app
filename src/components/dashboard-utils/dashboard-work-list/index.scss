@@ -1,0 +1,22 @@
+.dashboard-work-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .work-item-quick-add-wrapper {
+        padding: 0 var(--spacing);
+        border-bottom: var(--bd);
+    }
+
+    .work-list-wrapper {
+        padding: 0 var(--spacing);
+        flex: 1;
+        overflow: auto;
+
+        .work-list-item {
+            padding: var(--spacing-xs) 0;
+            border-bottom: var(--bd);
+        }
+    }
+}

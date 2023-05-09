@@ -1,0 +1,16 @@
+.dashboard-discussion {
+    padding: var(--spacing);
+
+    .comment-board .subthread .comment-read.comment-borderless {
+        box-shadow: var(--bs-1);
+    }
+
+    .comment-board .subthread .comment-read.comment-borderless:hover {
+        box-shadow: var(--bs-1-ambient);
+    }
+
+    .comment-read .comment-read-body .comment-read-content {
+        word-break: break-word;
+        grid-template-columns: 1fr 80px;
+    }
+}

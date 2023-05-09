@@ -1,0 +1,35 @@
+.compact-dashboard-utils {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    // .hidden-utils {
+    //     display: none;
+    // }
+
+    // .toggle-collapse-btn {
+    //     height: 200px;
+    //     padding: 0 var(--spacing-xs);
+    //     background-color: var(--contrast-primary);
+
+    //     display: flex;
+    //     align-items: center;
+    //     cursor: pointer;
+
+    //     &.collapsed {
+    //         z-index: 1;
+    //         position: absolute; // make the btn take no spacing
+    //         transform: translateX(-100%);
+    //         border-radius: var(--br) 0 0 var(--br);
+    //         border-right: none;
+    //         box-shadow: -3px 3px 6px rgb(0 0 0 / 16%);
+    //     }
+
+    //     &.expanded {
+    //         border: 1px solid var(--main-tertiary);
+    //         border-radius: 0 var(--br) var(--br) 0;
+    //         border-left: none;
+    //         box-shadow: var(--bs-ingredient);
+    //     }
+    // }
+}

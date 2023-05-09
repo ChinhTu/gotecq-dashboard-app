@@ -1,0 +1,13 @@
+.btn-star-dashboard {
+    cursor: pointer;
+
+    .star-icon {
+        font-size: inherit;
+        color: var(--main-warning);
+        stroke: var(--main-warning);
+
+        &:hover {
+            box-shadow: 0 0 1px 1px var(--main-tertiaryDarker);
+        }
+    }
+}

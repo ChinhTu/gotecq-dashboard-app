@@ -1,0 +1,80 @@
+.side-nav__dashboard-menu {
+    .side-nav__dashboard-menu__collapse {
+        height: 100%;
+        overflow-y: auto;
+
+        // override ui
+        color: var(--text-normal);
+        border: none;
+        background-color: transparent;
+
+        .ant-collapse-item {
+            background-color: transparent;
+            border-bottom: none;
+
+            &+.ant-collapse-item {
+                border: none;
+            }
+
+            .ant-collapse-header {
+                background-color: transparent;
+                color: inherit;
+                min-height: 2rem;
+                padding-left: 0;
+                padding-top: var(--spacing-xs);
+                padding-bottom: var(--spacing-xs);
+                font-weight: bold;
+                margin-bottom: var(--spacing-xs);
+                border-bottom: var(--size-xxs) solid transparent;
+
+                .ant-collapse-arrow {
+                    right: var(--spacing-sm);
+                }
+            }
+
+            .ant-collapse-content {
+                color: inherit;
+                background-color: transparent;
+                padding-bottom: var(--spacing);
+                border-top: none;
+
+                .ant-collapse-content-box {
+                    padding: 0;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            &.activated-group .ant-collapse-header {
+                color: var(--text-activated);
+                border-bottom-color: var(--bg-activated);
+                text-shadow: var(--ts-light) !important;
+            }
+        }
+
+        .dashboard-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            padding-right: calc(var(--spacing-sm) - var(--spacing-xxs)); // a trick to help the ActionStar at dashboard-menu match the vertical align
+            border-radius: var(--br-sm);
+            column-gap: var(--spacing-sm);
+
+            .dashboard-item__name {
+                cursor: pointer;
+                flex: 1;
+            }
+
+            .add-to-favorite {
+                cursor: pointer;
+            }
+
+            &.activated-dashboard {
+                background-color: var(--bg-activated);
+                color: var(--text-activated);
+            }
+        }
+    }
+}

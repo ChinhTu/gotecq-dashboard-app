@@ -1,0 +1,37 @@
+.btn-reset {
+    margin: unset;
+    padding: unset;
+    height: unset;
+    border: unset;
+}
+
+.btn {
+    border: none;
+
+    &:hover {
+        color: var(--color-hovered);
+        background-color: var( --main-hovered);
+    }
+
+    &.btn--tertiary {
+        background-color: var( --main-tertiary);
+        border: 1px solid var( --main-tertiary);
+
+        &:hover {
+            background-color: var( --main-tertiaryLighter);
+            border: 1px solid var( --main-tertiary);
+        }
+    }
+
+    &.btn-primary {
+        background-color: var( --main-primary);
+
+        &:hover {
+            color: var(--contrast-primary);
+        }
+    }
+
+    &.btn-add {
+        margin: var(--spacing) 0;
+    }
+}

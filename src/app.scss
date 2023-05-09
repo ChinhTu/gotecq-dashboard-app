@@ -1,0 +1,36 @@
+// Hide actions button in item filter for Quality Measure Dashboard
+// .gap-list-actions-btn {
+//     display: none;
+// }
+
+// Hide export data button in item filter for MAH dashboard Dashboard
+// .quality-export-btn {
+//     display: none;
+// }
+
+// Padding left for inventory management dashboard only on PCD app
+.generic-dashboard {
+    padding-left: var(--spacing-lg) !important;
+}
+
+// Custom parameter for activity summary dashboard
+.filter-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
+
+    .menu-header {
+        padding: 0;
+        border-bottom: 1px solid var(--main-major);
+        min-height: unset;
+        margin-bottom: var(--spacing-sm);
+    }
+}
+
+// Styling chung cho tất cả dashboard layout
+.dashboard-container {
+    .internal-error-page {
+        border-radius: var(--br);
+    }
+}

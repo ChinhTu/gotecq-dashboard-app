@@ -1,0 +1,24 @@
+.dashboard-bucket-header {
+    &.compose-header {
+        padding: 0;
+        min-height: unset;
+        align-items: flex-start;
+    }
+
+    .dashboard-name {
+        font-size: var(--fs-lg);
+
+        &>.content-text {
+            white-space: unset; // prevent to break layout when the dashboard name too long, because outside parents don't have specific width
+        }
+    }
+
+    .action-btn {
+        cursor: pointer;
+        font-size: var(--fs-lg);
+
+        &:hover {
+            color: var(--main-major);
+        }
+    }
+}

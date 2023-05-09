@@ -1,0 +1,12 @@
+.boilerplate-main-layout {
+    display: flex;
+    padding: var(--spacing);
+    height: calc(100vh - var(--min-height-navbar));
+
+    .primary {}
+
+    .secondary {
+        flex: 1;
+        overflow-y: auto;
+    }
+}

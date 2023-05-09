@@ -1,0 +1,23 @@
+.experience-main-layout {
+    display: flex;
+    background-color: var(--main-aspect);
+    height: calc(100vh - var(--min-height-navbar));
+
+    .extension {
+        height: 100%;
+        position: relative;
+        padding: var(--spacing);
+    }
+
+    .primary {
+        flex: 1;
+        height: 100%;
+        overflow-x: auto;
+    }
+
+    .secondary {
+        height: 100%;
+        padding-top: var(--spacing);
+        padding-bottom: var(--spacing);
+    }
+}

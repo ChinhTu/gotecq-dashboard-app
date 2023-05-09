@@ -1,0 +1,132 @@
+.bucket-work-item-wrap {
+    background-color: var(--color-white);
+    position: relative;
+
+    &.dragging {
+        box-shadow: var(--bs);
+    }
+
+    .work-item {
+        display: flex;
+        cursor: auto;
+
+        .work-item__head {
+            display: flex;
+            flex-direction: column;
+            margin-right: var(--spacing);
+            font-size: var(--fs-lg);
+
+            .retry-button {
+                cursor: pointer;
+                color: var(--sub-major);
+                vertical-align: -0.25rem;
+
+                &:hover {
+                    color: var(--main-major);
+                }
+            }
+
+            .work-item-checkbox {
+                .ant-checkbox.ant-checkbox-checked {
+                    & .ant-checkbox-inner {
+                        background-color: var(--main-success);
+                        border-color: var(--main-success);
+                    }
+                }
+
+                .ant-checkbox:not(.ant-checkbox-checked) {
+                    & .ant-checkbox-inner {
+                        border-color: var(--contrast-disabled);
+                    }
+
+                    & .ant-checkbox-inner::after {
+                        border-color: var(--contrast-disabled);
+                        opacity: 1;
+                        transform: rotate(45deg) scale(1) translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+
+        .work-item__body {
+            display: inline-block;
+            min-width: 0;
+            flex: 1;
+
+            .body__top {
+                display: flex;
+                align-items: center;
+
+                .title {
+                    cursor: pointer;
+                    font-weight: var(--fw-bold);
+                    font-size: var(--fs-lg);
+                    color: var(--color-subtle);
+                    font-weight: bold;
+                    display: flex;
+                    overflow: hidden;
+                    flex: 1;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+
+                    &.title-line {
+                        text-decoration: line-through;
+                        color: var(--color-faint)
+                    }
+
+                    &:hover {
+                        color: var(--main-primary);
+                    }
+                }
+
+                .work-bucket__status {
+                    margin-left: auto;
+                    padding-left: var(--spacing-sm);
+                    white-space: nowrap;
+
+                    &.NEW {
+                        color: var(--color-work-item-status-new);
+                    }
+
+                    &.INPROGRESS {
+                        color: var(--color-work-item-status-inprogress);
+                    }
+
+                    &.DONE {
+                        color: var(--color-work-item-status-done);
+                    }
+                }
+            }
+
+            .body__bottom {
+                display: flex;
+                align-items: center;
+                flex: 1;
+
+                .owner {
+                    color: var(--color-faint);
+                    overflow: hidden;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    display: flex;
+                    align-items: center;
+                    min-width: 0;
+                    height: 25px;
+
+                    .owner--icon {
+                        font-size: var(--fs-sm);
+                        margin-right: var(--spacing-xs);
+                    }
+                }
+
+                .due-date {
+                    font-size: var(--fs-sm);
+                    margin-left: auto;
+                    white-space: nowrap;
+                    color: var(--color-extraFaint);
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

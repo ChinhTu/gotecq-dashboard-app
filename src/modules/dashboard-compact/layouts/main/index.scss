@@ -1,0 +1,22 @@
+.dashboard-compact-main-layout {
+    .panel-wrap {
+        display: flex;
+        background-color: var(--main-tertiaryLighter);
+        height: 100vh;
+        margin-right: var(--spacing);
+
+        .extension {}
+
+        .primary {
+            flex: 1;
+            height: 100%;
+            overflow-x: auto;
+        }
+
+        .secondary {
+            height: 100%;
+            padding-top: var(--spacing);
+            padding-bottom: var(--spacing);
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@import "~antd/dist/antd.css";
+// @import "@gotecq/component.complex-component/index.scss";
+
+@import "./variable.scss";
+@import "./text.scss";
+@import "./btn.scss";
+@import "./utils.scss";
+@import "./override/index.scss";
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: "Roboto Condensed", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+
+    // HOTFIX
+    // In first version of the app, Filter panel stay on right side of the screen
+    // when user hover advanced mode btn of the Filter => the tooltip will cause flickering scrollbar of <body/>
+    // => hide overflow-x of the <body />
+    // overflow-x: hidden;
+
+    // #root {
+    //     overflow: hidden;
+    // }
+}
+
+// Quick fix for weird overflowing problem
+.app-wrapper {
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+// Quick fix, markdown should respect body's font
+.markdown-body {
+    font-family: "Roboto Condensed", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+:root {
+    --footer-height: 40px;
+    --main-selected: var(--main-secondaryLighter);
+    --color-selected: var(--main-major);
+    --color-hovered: var(--color-normal);
+    --main-hovered: #e8faff;
+    --main-aspect: var(--color-neutral-700);
+
+    --color-work-item-status-new: var(--contrast-disabled);
+    --color-work-item-status-inprogress: var(--main-warning);
+    --color-work-item-status-done: var(--main-success);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px #ddd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #dadada;
+    border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #c2c2c2;
+}
+
+@-webkit-keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

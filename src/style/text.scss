@@ -1,0 +1,45 @@
+.text {
+    &--italic {
+        font-style: italic;
+    }
+
+    &--small {
+        font-size: var(--fs-sm);
+        cursor: auto;
+    }
+
+    &--success {
+        opacity: .75;
+        color: var(--main-success);
+    }
+
+    &--warning {
+        opacity: .75;
+        color: var(--main-warning);
+    }
+
+    &--danger {
+        opacity: .75;
+        color: var(--main-danger);
+
+        &:hover {
+            color: var(--sub-danger);
+
+        }
+    }
+
+    &--ghost {
+        opacity: .75;
+        color: var(--main-minor);
+    }
+
+    &--major {
+        opacity: .75;
+        color: var(--main-major);
+    }
+
+    &--secondary {
+        opacity: .75;
+        color: var(--color-faint);
+    }
+}

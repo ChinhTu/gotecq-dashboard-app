@@ -1,0 +1,118 @@
+.dashboard-scroll-btn {
+    &.mouse {
+        background-color: var(--color-yellow-300);
+        width: var(--spacing-xl);
+        height: var(--spacing-3xl);
+        border-radius: var(--br-lg);
+        border: var(--bd-extreme);
+        border-width: var(--size-xxs);
+        cursor: pointer;
+
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+    }
+
+    &.mouse-down {
+        &:hover {
+            border-color: var(--color);
+        }
+
+        &:before {
+            width: var(--spacing-sm);
+            height: var(--spacing-sm);
+            border-radius: 50%;
+            top: var(--spacing-sm);
+            left: calc(50% - var(--spacing-xs));
+            border: var(--bd-extreme);
+            border-width: var(--size-xxs);
+        }
+
+        &:hover::before {
+            border-color: var(--color);
+        }
+
+        &:after {
+            top: var(--spacing-xl);
+            left: calc(50% - var(--spacing-xs));
+            border: var(--size-xs) solid transparent;
+            border-top-color: var(--color-extraFaint);
+        }
+
+        &:hover::after {
+            border-top-color: var(--color);
+            animation: mouse-down-arrow 1.2s ease-in-out infinite;
+        }
+    }
+
+    @keyframes mouse-down-arrow {
+        20% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(9px);
+        }
+
+        80% {
+            transform: translateY(-3px);
+        }
+    }
+
+    &.mouse-up {
+        &:hover {
+            border-color: var(--color);
+        }
+
+        &:before {
+            width: var(--spacing-sm);
+            height: var(--spacing-sm);
+            border-radius: 50%;
+            bottom: var(--spacing-sm);
+            left: calc(50% - var(--spacing-xs));
+            border: var(--bd-extreme);
+            border-width: var(--size-xxs);
+        }
+
+        &:hover::before {
+            border-color: var(--color);
+        }
+
+        &:after {
+            bottom: var(--spacing-xl);
+            left: calc(50% - var(--spacing-xs));
+            border: var(--size-xs) solid transparent;
+            border-bottom-color: var(--color-extraFaint);
+        }
+
+        &:hover::after {
+            border-bottom-color: var(--color);
+            animation: mouse-up-arrow 1.2s ease-in-out infinite;
+        }
+    }
+
+    @keyframes mouse-up-arrow {
+        20% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-9px);
+        }
+
+        80% {
+            transform: translateY(3px);
+        }
+    }
+}
